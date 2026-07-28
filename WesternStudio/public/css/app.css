@@ -308,6 +308,30 @@ header {
   font-size: 0.8125rem;
 }
 
+/* A product shown without an outbound link (e.g. a bespoke, private build) -
+   same card, but no clickable affordance and room for a contact line. */
+.product-static { cursor: default; }
+.product-static:hover {
+  border-color: var(--border-mid);
+  background: rgba(255,255,255,0.55);
+  box-shadow: none;
+  transform: none;
+}
+.product-static .product-card-body { grid-template-columns: auto 1fr; }
+
+.product-note {
+  margin-top: 0.9rem;
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.product-note a {
+  color: var(--amber);
+  font-weight: 600;
+  text-decoration: none;
+}
+.product-note a:hover { text-decoration: underline; }
+
 /* ── About ── */
 .about {
   padding: var(--space-xl) 0;
