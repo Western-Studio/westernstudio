@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 160">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@900&amp;family=Inter:wght@700;900&amp;display=swap');
+    </style>
+  </defs>
+
+  <!-- W square -->
+  <rect x="0" y="0" width="112" height="112" rx="10" fill="#1c3329"/>
+  <text x="56" y="90" font-family="Georgia, 'Times New Roman', serif" font-size="82" font-weight="700" text-anchor="middle" fill="#f4efe6">W</text>
+
+  <!-- S square -->
+  <rect x="124" y="0" width="112" height="112" rx="10" fill="#c87d2a"/>
+  <text x="180" y="90" font-family="Georgia, 'Times New Roman', serif" font-size="82" font-weight="700" text-anchor="middle" fill="#f4efe6">S</text>
+
+  <!-- G square -->
+  <rect x="248" y="0" width="112" height="112" rx="10" fill="#b84c2e"/>
+  <text x="304" y="90" font-family="Georgia, 'Times New Roman', serif" font-size="82" font-weight="700" text-anchor="middle" fill="#f4efe6">G</text>
+
+  <!-- Wordmark below -->
+  <text x="0" y="142" font-family="'Inter', Arial, sans-serif" font-size="13" font-weight="900" letter-spacing="5" text-transform="uppercase" fill="#1c3329">WESTERN</text>
+  <text x="126" y="142" font-family="'Inter', Arial, sans-serif" font-size="13" font-weight="900" letter-spacing="5" fill="#c87d2a"> STUDIO</text>
+  <text x="252" y="142" font-family="'Inter', Arial, sans-serif" font-size="13" font-weight="900" letter-spacing="5" fill="#b84c2e"> GROUP</text>
+</svg>

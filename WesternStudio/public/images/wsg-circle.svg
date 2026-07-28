@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <filter id="depth" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="2.5" dy="3" stdDeviation="2.5" flood-color="#0a1f15" flood-opacity="0.55"/>
+    </filter>
+  </defs>
+
+  <circle cx="100" cy="100" r="100" fill="#1c3329"/>
+
+  <!-- G — back -->
+  <text x="156" y="100"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="84" font-weight="700"
+    text-anchor="middle" dominant-baseline="central"
+    fill="#b84c2e" filter="url(#depth)">G</text>
+
+  <!-- S — middle -->
+  <text x="108" y="100"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="84" font-weight="700"
+    text-anchor="middle" dominant-baseline="central"
+    fill="#c87d2a" filter="url(#depth)">S</text>
+
+  <!-- W — front -->
+  <text x="60" y="100"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="84" font-weight="700"
+    text-anchor="middle" dominant-baseline="central"
+    fill="#f4efe6" filter="url(#depth)">W</text>
+</svg>
