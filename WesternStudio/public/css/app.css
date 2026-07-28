@@ -340,6 +340,49 @@ header {
 }
 .product-note a:hover { border-bottom-color: var(--green); }
 
+/* Bespoke sub-section under a product card (e.g. the real BRIT build) */
+.product-subsection {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: var(--space-md);
+  align-items: center;
+  margin-top: 0.9rem;
+  margin-left: var(--space-lg);
+  padding: var(--space-md);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--amber);
+  border-radius: var(--radius-md);
+  background: rgba(255,255,255,0.4);
+}
+.subsection-img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  filter: grayscale(1);
+  transition: filter var(--transition-md);
+}
+.product-subsection:hover .subsection-img { filter: grayscale(0); }
+.subsection-title {
+  font-family: var(--font-serif);
+  font-size: 1.02rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--green);
+  margin-bottom: 0.35rem;
+}
+.subsection-desc {
+  font-size: 0.84rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.product-subsection .product-note { margin-top: 0.85rem; padding-top: 0.75rem; }
+@media (max-width: 620px) {
+  .product-subsection { grid-template-columns: 1fr; margin-left: 0; }
+}
+
 /* ── About ── */
 .about {
   padding: var(--space-xl) 0;
