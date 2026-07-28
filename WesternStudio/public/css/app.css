@@ -219,6 +219,9 @@ header {
   border-bottom: 1px solid var(--border);
 }
 
+/* each product = an index number sitting above its card */
+.product { margin-bottom: 1.5rem; }
+
 .product-card {
   display: block;
   border: 1px solid var(--border-mid);
@@ -227,7 +230,6 @@ header {
   text-decoration: none;
   transition: border-color var(--transition-md), box-shadow var(--transition-md),
               background var(--transition-md), transform var(--transition-md);
-  margin-bottom: 0.875rem;
   backdrop-filter: blur(4px);
   overflow: hidden;
 }
@@ -254,20 +256,21 @@ header {
 
 .product-card-body {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 1fr auto;
   align-items: start;
   gap: var(--space-md);
   padding: var(--space-md) var(--space-lg) 1.75rem;
 }
 
 .product-num {
-  font-size: 0.6rem;
+  display: block;
+  font-size: 0.68rem;
   font-weight: 700;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--amber);
-  padding-top: 0.25rem;
-  width: 1.5rem;
+  margin-bottom: 0.55rem;
+  padding-left: 0.1rem;
 }
 
 .product-info { min-width: 0; }
@@ -301,10 +304,6 @@ header {
 }
 
 .product-placeholder {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
-  gap: var(--space-md);
   padding: 1.25rem var(--space-lg);
   border: 1px dashed rgba(28,51,41,0.13);
   border-radius: var(--radius-md);
@@ -313,15 +312,15 @@ header {
 }
 
 /* A product shown without an outbound link (e.g. a bespoke, private build) -
-   same card, but no clickable affordance and room for a contact line. */
+   same card, no clickable lift, but still a dark outline on hover. */
 .product-static { cursor: default; }
 .product-static:hover {
-  border-color: var(--border-mid);
+  border-color: var(--green);
   background: rgba(255,255,255,0.55);
   box-shadow: none;
   transform: none;
 }
-.product-static .product-card-body { grid-template-columns: auto 1fr; }
+.product-static .product-card-body { grid-template-columns: 1fr; }
 
 .product-note {
   margin-top: 1.15rem;
@@ -514,7 +513,7 @@ footer {
   .wordmark { gap: var(--space-sm); }
   .about-inner { grid-template-columns: 1fr; }
   .about-photo { width: 4rem; height: 4rem; }
-  .product-card-body { grid-template-columns: auto 1fr; }
+  .product-card-body { grid-template-columns: 1fr; }
   .product-arrow { display: none; }
   .product-hero-img { height: 130px; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
