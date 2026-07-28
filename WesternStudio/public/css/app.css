@@ -246,7 +246,11 @@ header {
   object-position: center top;
   display: block;
   border-bottom: 1px solid var(--border);
+  filter: grayscale(1);
+  transition: filter var(--transition-md);
 }
+/* banners sit in black-and-white, warming to full colour on hover */
+.product-card:hover .product-hero-img { filter: grayscale(0); }
 
 .product-card-body {
   display: grid;
@@ -320,17 +324,22 @@ header {
 .product-static .product-card-body { grid-template-columns: auto 1fr; }
 
 .product-note {
-  margin-top: 0.9rem;
+  margin-top: 1.15rem;
+  padding-top: 0.95rem;
+  border-top: 1px solid var(--border);
   font-size: 0.8125rem;
-  line-height: 1.6;
+  line-height: 1.65;
   color: var(--muted);
 }
 .product-note a {
-  color: var(--amber);
+  color: var(--green);
   font-weight: 600;
   text-decoration: none;
+  border-bottom: 1px solid rgba(28,51,41,0.28);
+  padding-bottom: 1px;
+  transition: border-color var(--transition-md);
 }
-.product-note a:hover { text-decoration: underline; }
+.product-note a:hover { border-bottom-color: var(--green); }
 
 /* ── About ── */
 .about {
