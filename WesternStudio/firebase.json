@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "western-studio",
     "public": "public",
     "ignore": ["firebase.json", "**/.*"],
     "rewrites": [
