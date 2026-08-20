@@ -451,6 +451,26 @@ header {
   line-height: 1.75;
 }
 
+/* ── How it's built ── */
+.approach {
+  padding: var(--space-xl) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.approach-body {
+  max-width: 46rem;
+}
+
+.approach-body p {
+  font-size: 0.9375rem;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.approach-body p + p {
+  margin-top: var(--space-md);
+}
+
 /* ── Brand ── */
 .brand {
   padding: var(--space-xl) 0;
